@@ -9,4 +9,5 @@ form.addEventListener('submit', (e) => {
     formInput.value = '';
 });
 
+getWeather('Birmingham');
 

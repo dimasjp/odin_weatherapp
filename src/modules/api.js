@@ -6,9 +6,6 @@ const getWeather = async (input) => {
             mode: 'cors'
         });
         let weather = await weatherResponse.json();
-        console.log(weather);
-        console.log(weather.location.name);
-        console.log(weather.current.condition.text);
         renderWeatherInfo(weather);
     } catch (error) {
         console.log(error)

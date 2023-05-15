@@ -16,7 +16,6 @@ body {
     background-size: cover;
 }
 
-
 #main {
     position: relative;
     min-height: 100%;
@@ -30,10 +29,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    max-width: 30rem;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 40rem;
     min-width: min-content;
-    min-height: 14rem;
     padding: 1rem;
     border-radius: 3.5px;
     background-color: hsl(0 0% 100% / 0.5);
+}
+
+.card-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.card-condition {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.card-form {
+    min-width: 100%;
 }
