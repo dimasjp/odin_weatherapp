@@ -1,3 +1,4 @@
+import errIcon from '../assets/sad-face-2691.svg'
 
 
 const renderWeatherInfo = (info) => {
@@ -12,4 +13,16 @@ const renderWeatherInfo = (info) => {
     icon.src = info.current.condition.icon;
 }
 
-export {renderWeatherInfo}
+const renderError = (error) => {
+    const location = document.querySelector('.card-location');
+    const weather = document.querySelector('.card-weather');
+    const temp = document.querySelector('.card-temp');
+    const icon = document.querySelector('.card-icon');
+
+    weather.innerText = '';
+    temp.innerText = '';
+    icon.src = errIcon;
+    location.innerText = error;
+}
+
+export {renderWeatherInfo, renderError}

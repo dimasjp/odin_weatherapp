@@ -49,6 +49,10 @@ body {
     gap: 0.5rem;
 }
 
+.card-icon {
+    max-block-size: 4rem;
+}
+
 .card-condition {
     display: flex;
     flex-direction: row;

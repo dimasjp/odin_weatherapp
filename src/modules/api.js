@@ -1,4 +1,4 @@
-import { renderWeatherInfo } from "./dom";
+import { renderWeatherInfo, renderError } from "./dom";
 
 const getWeather = async (input) => {
     try {
@@ -8,7 +8,8 @@ const getWeather = async (input) => {
         let weather = await weatherResponse.json();
         renderWeatherInfo(weather);
     } catch (error) {
-        console.log(error)
+        console.log(error);
+        renderError(`Sorry, we couldn't find ${input}`);
     } 
 }
 
